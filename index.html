@@ -1,7 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Snowball</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>snowballthelev.github.io</title>
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet"> -->
+	<style type="text/css">
+		body {
+			/*
+			background-color: #f5f5f5;
+			color: #333;
+			*/
+			margin: 20px;
+			padding: 0;
+			letter-spacing: -0.03em;
+			}
+		/* Large desktop */
+		@media (min-width: 1200px) {
+			body {width: 960px;}
+			}
+		/* Portrait tablet to landscape and desktop */
+		@media (min-width: 768px) and (max-width: 979px) {
+		body {width: 750px;}
+			}
+		/* Phone to portrait tablet */
+		@media (max-width: 767px) {
+		body {width: auto; padding: 5px 7px;}
+			}	
+	</style>
 </head>
 <body>
 <h1>Hello, Friend!</h1>
@@ -33,6 +59,33 @@
 </div>
 <br>
 <h4>$ contact-me</h4>
-<p><a href="https://github.com/snowballthelev">GitHub</a> <a href="https://www.hackthebox.eu/profile/snowballthelev">HackTheBox</a> <a href="https://tryhackme.com/p/snowballthelev">TryHackMe</a> <a href="https://freecodecamp.org/snowballthelev">freeCodeCamp</a> <a href="https://codepen.io/snowballthelev">CodePen</a> <a href="https://linkedin.com/in/hkawngdaujumwu">LinkedIn</a> <a href="mailto:snowballthelev@pm.me">Email</a></p>
+<!-- <p><a href="https://github.com/snowballthelev">GitHub</a> <a href="https://www.hackthebox.eu/profile/snowballthelev">HackTheBox</a> <a href="https://tryhackme.com/p/snowballthelev">TryHackMe</a> <a href="https://freecodecamp.org/snowballthelev">freeCodeCamp</a> <a href="https://codepen.io/snowballthelev">CodePen</a> <a href="https://linkedin.com/in/hkawngdaujumwu">LinkedIn</a> <a href="mailto:snowballthelev@pm.me">Send a mail</a> <a href="tel:9768419647">Call me</a></p> -->
+<ul>
+	<li><a href="https://www.reddit.com/user/SnowballTheLev/">Reddit</a></li>
+	<li><a href="https://github.com/snowballthelev">GitHub</a></li>
+	<li><a href="https://linkedin.com/in/hkawngdaujumwu">LinkedIn</a></li>
+	<li id="my-email">
+		<button id="unmask-email">Click to get my email address</button>
+	</li>
+</ul>
+<script>
+    var email_confirmation = [
+        'By clicking OK below, you confirm that:',
+        '',
+        'You will only use this email for personal communication. All business requests must be sent via LinkedIn.',
+        'If you represent a business entity, you will treat this email address as personal data on me as an individual, in accordance with MM PDA regulations.',
+        'You will not send me any spam.',
+    ];
+
+    document.getElementById('unmask-email').addEventListener('click', function () {
+        if (confirm(email_confirmation.join("\n"))) {
+            var eml = document.getElementById('my-email');
+            eml.innerHTML = '<a href="mailto:snowballthelev@pm.me">email</a>';
+        }
+    });
+</script>
+<br>
+<h4>$ pgp</h4>
+<p>Get my Public Key <a href="#">here</a>, if you want to send me something encrypted.</p>
 </body>
 </html>
