@@ -66,7 +66,7 @@
 	<li><a href="https://github.com/snowballthelev">GitHub</a></li>
 	<li><a href="https://linkedin.com/in/hkawngdaujumwu">LinkedIn</a></li>
 	<li id="my-email">
-		<button id="unmask-email">Click to get my email address</button>
+		<button id="unmask-email">Click to get my e-mail address</button>
 	</li>
 </ul>
 <script>
@@ -74,9 +74,9 @@
         'By clicking OK below, you confirm that:',
         '',
 	'',
-        'You will only use this email for personal communication. All business requests must be sent via LinkedIn.',
+        'You will only use this e-mail for personal communication. All business requests must be sent via LinkedIn.',
         '',
-	'If you represent a business entity, you will treat this email address as personal data on me as an individual, in accordance with MM PDA regulations.',
+	'If you represent a business entity, you will treat this e-mail address as personal data on me as an individual, in accordance with MM PDA regulations.',
         '',
 	'You will not send me any spam.',
     ];
@@ -84,7 +84,7 @@
     document.getElementById('unmask-email').addEventListener('click', function () {
         if (confirm(email_confirmation.join("\n"))) {
             var eml = document.getElementById('my-email');
-            eml.innerHTML = '<a href="mailto:snowballthelev@pm.me">email</a>';
+            eml.innerHTML = '<a href="mailto:snowballthelev@pm.me">E-mail</a>';
         }
     });
 </script>
